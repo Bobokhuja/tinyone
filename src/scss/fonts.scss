@@ -1,3 +1,2 @@
-@include font-include($font-name: "Roboto", $font-weight: 400, $woff: "../fonts/Roboto-Regular.woff", $woff2: "../fonts/Roboto-Regular.woff2");
-@include font-include($font-name: "Roboto", $font-weight: 700, $woff: "../fonts/Roboto-Bold.woff", $woff2: "../fonts/Roboto-Bold.woff2");
-@include font-include($font-name: "Roboto", $font-weight: 300, $woff: "../fonts/Roboto-Light.woff", $woff2: "../fonts/Roboto-Light.woff2");
+@include font-include("PT Sans", $font-style: normal, $font-weight: 400, $woff: "../fonts/PTSans-Regular.woff", $woff2: "../fonts/PTSans-Regular.woff2");
+@include font-include("PT Sans", $font-style: normal, $font-weight: 700, $woff: "../fonts/PTSans-Bold.woff", $woff2: "../fonts/PTSans-Bold.woff2");
