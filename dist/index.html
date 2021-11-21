@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="Первая вестка">
+    <title>tinyone</title>
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body> 
+    <h1 class="visually-hidden">tinyone</h1>
+    <div class="top">
+      <div class="top__wrap wrap">
+        <header class="header">
+          <nav class="header__navigation"><a class="header__logo" href="/">
+              <picture>
+                <source srcset="img/logo.webp" type="image/webp" media="(min-width: 647px)" width="149" height="43">
+                <source srcset="img/logo.png" type="image/png" media="(min-width: 647px)" width="149" height="43">
+                <source srcset="img/logo.webp" type="image/webp" media="(max-width: 647px)" width="149" height="43"><img class="header__logo-img" src="img/logo.png" alt="Логотип tinyone" width="149" height="43">
+              </picture></a>
+            <ul class="header__menu menu">
+              <li class="menu__item"><a class="menu__link" href="#">Features</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Support</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Blog</a></li>
+            </ul>
+          </nav>
+        </header>
+        <section class="banner">
+          <h2 class="visually-hidden">Баннер</h2>
+          <div class="banner__left">
+            <p class="banner__title">Inspire your inspiration</p>
+            <p class="banner__subtitle">Simple to use for your app, products showcase and your inspiration</p>
+            <p class="banner__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit</p>
+            <ul class="banner__list">
+              <li class="banner__list-item"><a class="banner__link" href="#">
+                  <svg class="banner__svg" aria-label="Apple" width="33" height="45">
+                    <use xlink:href="img/symbol/sprite.svg#apple"></use>
+                  </svg></a></li>
+              <li class="banner__list-item"><a class="banner__link" href="#">
+                  <svg class="banner__svg" aria-label="Android" width="33" height="45">
+                    <use xlink:href="img/symbol/sprite.svg#android"></use>
+                  </svg></a></li>
+              <li class="banner__list-item"><a class="banner__link" href="#">
+                  <svg class="banner__svg" aria-label="Windows" width="33" height="45">
+                    <use xlink:href="img/symbol/sprite.svg#windows"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+          <div class="banner__right">
+            <p class="banner__img">
+              <picture>
+                <source srcset="../img/ipad.webp" type="image/webp" media="(min-width: 745px)">
+                <source srcset="../img/ipad.png" type="image/png" media="(min-width: 745px)"><img src="../img/0bit.png" alt="iPad">
+              </picture>
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <section class="features">
+      <div class="features__wrap wrap">
+        <div class="features__top">
+          <h2 class="features__title">Tinyone features</h2>
+          <p class="features__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</p>
+        </div>
+        <ul class="features__list">
+          <li class="features__item features__item--responsive">
+            <h3 class="features__name">Fully Responsive</h3>
+            <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+          </li>
+          <li class="features__item features__item--layer-psd">
+            <h3 class="features__name">Fully Layered PSD</h3>
+            <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+          </li>
+          <li class="features__item features__item--icons">
+            <h3 class="features__name">Font Awesome Icons</h3>
+            <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+          </li>
+          <li class="features__item features__item--html">
+            <h3 class="features__name">HTML3 &amp; CSS3 </h3>
+            <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+          </li>
+          <li class="features__item features__item--email">
+            <h3 class="features__name">Email Template </h3>
+            <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+          </li>
+          <li class="features__item features__item--download">
+            <h3 class="features__name">Free to download </h3>
+            <p class="features__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__wrap wrap">
+        <div class="footer__top">
+          <h2 class="footer__title">Keep in touch with us</h2>
+          <p class="footer__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</p>
+        </div>
+        <form class="footer__form form" action="#" method="get">
+          <p class="form__group form__group--email">
+            <input class="form__email" type="email" name="email-recend" placeholder="Enter your email to update">
+          </p>
+          <button class="form__submit" type="submit">SUBMIT</button>
+        </form>
+        <p class="footer__copyright">HALOVIETNAM LTD <br>66, Dang Van ngu, Dong Da <br>Hanoi, Vietnam</p>
+      </div>
+    </footer>
+  </body>
+</html>
