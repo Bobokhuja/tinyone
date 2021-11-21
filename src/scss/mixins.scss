@@ -67,13 +67,16 @@
   }
 }
 
-@mixin font-include($font-name, $font-style: normal, $font-weight: 400, $woff, $woff2: auto) {
+@mixin font-include($font-name, $font-style: normal, $font-weight: 400, $woff: none, $woff2: none) {
 
   @font-face {
     font-family: $font-name;
     font-style: $font-style;
     font-weight: $font-weight;
-    src: url($woff2) format("woff2"), url($woff) format("woff");
+    @if $woff != none {
+      src: url($woff2) format("woff2"), url($woff) format("woff");
+    }
+
     font-display: swap;
   }
 }
