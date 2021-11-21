@@ -1,0 +1,28 @@
+.header {
+  margin: 60px 0;
+}
+
+.header__navigation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1px;
+}
+
+.header__logo {
+  display: block;
+
+  @media (max-width: 648px) {
+    margin: 0 auto 20px;
+  }
+}
+
+.header__menu {
+  flex-basis: 470px;
+  justify-content: flex-end;
+  @media (max-width: 648px) {
+    flex-basis: 100%;
+    justify-content: center;
+  }
+}

@@ -6,11 +6,6 @@
 @import "normalize";
 @import "core";
 
-@import "blocks/header";
 @import "blocks/top";
-
-body {
-  margin: 20px auto;
-  margin: 0 math.div(15, 10);
-  font-size: 16px;
-}
+@import "blocks/header";
+@import "blocks/menu";
