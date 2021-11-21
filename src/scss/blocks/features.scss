@@ -1,0 +1,109 @@
+.features {
+  padding: 80px 0 120px;
+}
+
+.features__top {
+  max-width: 780px;
+  margin: 20px auto;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.features__title {
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.features__description {
+  margin: 20px 0;
+  font-size: 20px;
+  line-height: 24px;
+  color: $dark-gray;
+}
+
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.features__item {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 300px;
+  padding-left: 60px;
+  margin-bottom: 40px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
+    background-repeat: no-repeat;
+  }
+
+  &--responsive {
+    &::before {
+      width: 33px;
+      height: 40px;
+      background-image: url("../img/icons/tablet.svg");
+    }
+  }
+
+  &--layer-psd {
+    &::before {
+      width: 44px;
+      height: 44px;
+      background-image: url("../img/icons/lemon.svg");
+    }
+  }
+
+  &--icons {
+    &::before {
+      width: 47px;
+      height: 40px;
+      background-image: url("../img/icons/folder.svg");
+    }
+  }
+
+  &--html {
+    &::before {
+      width: 52px;
+      height: 39px;
+      background-image: url("../img/icons/code.svg");
+    }
+  }
+
+  &--email {
+    &::before {
+      width: 51px;
+      height: 40px;
+      background-image: url("../img/icons/envelope.svg");
+    }
+  }
+
+  &--download {
+    &::before {
+      width: 36px;
+      height: 43px;
+      background-image: url("../img/icons/bookmark.svg");
+    }
+  }
+}
+
+.features__name {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.features__text {
+  font-size: 16px;
+  line-height: 20px;
+  color: $gray;
+}
