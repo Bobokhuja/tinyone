@@ -92,17 +92,14 @@ function scss() {
 }
 
 function scssProduction() {
-  let processor = [autoprefixer('last 2 versions')]
+  let processor = [autoprefixer('last 2 versions'), cssnano()]
 
   return gulp.src(path.src.sass)
           .pipe(sass({
             outputStyle: 'expanded'
           }).on('error', sass.logError))
-          .pipe(postcss(processor))
           .pipe(mediaQueries())
-          .pipe(gulp.dest(path.dist.css))
-          .pipe(gulp.src(path.dist.css + '/style.css'))
-          .pipe(rename('style.min.css'))
+          .pipe(postcss(processor))
           .pipe(gulp.dest(path.dist.css))
           .pipe(browserSync.stream());
 }
@@ -235,7 +232,7 @@ function clean() {
 }
 
 let buildDev = gulp.series(clean, gulp.parallel(pugBuild, css, scss, js, gulp.series(img, img2webp, sprite), toWoff, toWoff2), linter);
-let buildProd = gulp.series(clean, gulp.parallel(pugBuild, css, scssProduction, jsProduction, gulp.series(img, img2webp, sprite), toWoff, toWoff2), linter);
+let buildProd = gulp.series(clean, gulp.parallel(pugBuild, css, scssProduction, jsProduction, gulp.series(img, img2webp, sprite), toWoff, toWoff2));
 
 exports.dev = gulp.series(buildDev, gulp.parallel(watcher, server));
 exports.prod = gulp.series(buildProd, gulp.parallel(watcher, server));

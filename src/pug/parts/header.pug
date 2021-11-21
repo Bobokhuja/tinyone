@@ -1,7 +1,11 @@
 header.header
   nav.header__navigation
     a(href="/").header__logo
-      img(src="img/logo.png", alt="Логотип tinyone", width="149", height="43").header__logo-img
+      picture
+        source(srcset="img/logo.webp", type="image/webp", media="(min-width: 647px)", width="149", height="43")
+        source(srcset="img/logo.png", type="image/png", media="(min-width: 647px)", width="149", height="43")
+        source(srcset="img/logo.webp", type="image/webp", media="(max-width: 647px)", width="149", height="43")
+        img(src="img/logo.png", alt="Логотип tinyone", width="149", height="43").header__logo-img
     ul.header__menu.menu
       li.menu__item
         a(href="#").menu__link Features
