@@ -67,7 +67,7 @@
   }
 }
 
-@mixin font-include($font-name, $font-style: normal, $font-weight: 400, $woff, $woff2) {
+@mixin font-include($font-name, $font-style: normal, $font-weight: 400, $woff, $woff2: auto) {
 
   @font-face {
     font-family: $font-name;
