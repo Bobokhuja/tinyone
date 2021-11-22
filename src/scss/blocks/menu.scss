@@ -26,7 +26,7 @@
     height: 3px;
     content: "";
     background-color: $black;
-    transition: transform, 0.3s;
+    transition: all, 0.3s;
     transform: scaleX(0);
     transform-origin: center;
   }
