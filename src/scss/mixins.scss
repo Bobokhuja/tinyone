@@ -74,7 +74,10 @@
     font-style: $font-style;
     font-weight: $font-weight;
     @if $woff != none {
-      src: url($woff2) format("woff2"), url($woff) format("woff");
+      src: url($woff) format("woff");
+      @if $woff2 != none {
+        src: url($woff2) format("woff2"), url($woff) format("woff");
+      }
     }
 
     font-display: swap;
