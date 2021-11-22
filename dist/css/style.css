@@ -784,7 +784,7 @@ body {
   background-color: #c9af00;
 }
 
-@media (max-width: 745px) {
+@media (max-width: 768px) {
   .banner__left {
     -ms-flex-preferred-size: 450px;
     flex-basis: 450px;
